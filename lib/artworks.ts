@@ -67,17 +67,17 @@ export const artworks: Artwork[] = [
       "Often called the 'Mona Lisa of the North,' Vermeer's tronie captures a girl turning toward the viewer with a luminous pearl catching the light. It showcases the Dutch master's gift for rendering light, texture, and a moment of quiet, direct human presence.",
   },
   {
-    id: "persistence-memory",
-    title: "The Persistence of Memory",
-    artist: "Salvador Dalí",
-    year: "1931",
-    period: "Surrealism",
-    medium: "Oil on canvas",
+    id: "last-supper",
+    title: "The Last Supper",
+    artist: "Leonardo da Vinci",
+    year: "1495–1498",
+    period: "High Renaissance",
+    medium: "Tempera and oil on gesso",
     imageUrl:
-      "https://commons.wikimedia.org/wiki/Special:FilePath/The_Persistence_of_Memory.jpg?width=1000",
-    credit: "Museum of Modern Art, public domain via Wikimedia Commons",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg?width=1000",
+    credit: "Santa Maria delle Grazie, Milan, public domain via Wikimedia Commons",
     blurb:
-      "Dalí's melting clocks in a barren Catalan landscape are among Surrealism's most recognizable images. The soft watches were his 'camembert of time' — a hallucinatory meditation on how memory and time refuse to stay rigid.",
+      "Leonardo's mural in the refectory of Santa Maria delle Grazie captures the instant Christ announces that one of the Twelve will betray him. Its balanced composition and the psychological drama rippling across the table made it one of the most studied images in Western art.",
   },
   {
     id: "great-wave",
@@ -113,7 +113,7 @@ export const artworks: Artwork[] = [
     period: "Regionalism",
     medium: "Oil on beaverboard",
     imageUrl:
-      "https://commons.wikimedia.org/wiki/Special:FilePath/American_Gothic_-_Grant_Wood.jpg?width=1000",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg?width=1000",
     credit: "Art Institute of Chicago, public domain via Wikimedia Commons",
     blurb:
       "Grant Wood painted this stern Iowa farmer and his daughter before a white farmhouse with a Gothic-style window — a deliberately ambiguous portrait of rural American identity. It became one of the most parodied images in art history, from magazine covers to popular culture.",
@@ -169,6 +169,136 @@ export const artworks: Artwork[] = [
     credit: "Art Institute of Chicago, public domain via Wikimedia Commons",
     blurb:
       "For the last three decades of his life Monet painted his garden pond at Giverny, chasing the shifting light across its surface. The Water Lilies series dissolves form into pure color and atmosphere, pointing the way toward abstract painting.",
+  },
+  {
+    id: "arnolfini-portrait",
+    title: "The Arnolfini Portrait",
+    artist: "Jan van Eyck",
+    year: "1434",
+    period: "Early Netherlandish",
+    medium: "Oil on oak panel",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Van_Eyck_-_Arnolfini_Portrait.jpg?width=1000",
+    credit: "National Gallery, London, public domain via Wikimedia Commons",
+    blurb:
+      "Van Eyck's portrait of the merchant Giovanni Arnolfini and his wife is a marvel of oil painting's new precision — every fold, bead and reflection rendered with jewel-like clarity. The convex mirror at the back, inscribed 'Jan van Eyck was here,' turns the painting into a witness to its own making.",
+  },
+  {
+    id: "las-meninas",
+    title: "Las Meninas",
+    artist: "Diego Velázquez",
+    year: "1656",
+    period: "Spanish Baroque",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg?width=1000",
+    credit: "Museo del Prado, public domain via Wikimedia Commons",
+    blurb:
+      "Velázquez's great court scene shows the Infanta Margarita surrounded by her maids of honor while the painter himself stands at his easel, looking out at the viewer. Its play of gazes and mirrors — who is watching whom? — has made it a puzzle that artists and philosophers have circled for centuries.",
+  },
+  {
+    id: "night-watch",
+    title: "The Night Watch",
+    artist: "Rembrandt van Rijn",
+    year: "1642",
+    period: "Dutch Golden Age",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/The_Night_Watch_-_HD.jpg?width=1000",
+    credit: "Rijksmuseum, Amsterdam, public domain via Wikimedia Commons",
+    blurb:
+      "Rembrandt's militia portrait broke every rule of the group portrait, turning a civic guard muster into a burst of movement, shadow and sudden light. Its daring composition — and the legend of the painter's supposed decline that followed — made it the Rijksmuseum's most famous painting.",
+  },
+  {
+    id: "hay-wain",
+    title: "The Hay Wain",
+    artist: "John Constable",
+    year: "1821",
+    period: "Romanticism",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/John_Constable_-_The_Hay_Wain_(1821).jpg?width=1000",
+    credit: "National Gallery, London, public domain via Wikimedia Commons",
+    blurb:
+      "Constable's view of the River Stour near his boyhood home of Flatford Mill made an ordinary Suffolk landscape into an icon of English Romanticism. Shown at the Paris Salon in 1824, it helped launch the French Romantic movement and inspired Delacroix to repaint parts of his own work.",
+  },
+  {
+    id: "liberty-leading",
+    title: "Liberty Leading the People",
+    artist: "Eugène Delacroix",
+    year: "1830",
+    period: "Romanticism",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne_Delacroix_-_Le_28_Juillet._La_Libert%C3%A9_guidant_le_peuple.jpg?width=1000",
+    credit: "Louvre Museum, public domain via Wikimedia Commons",
+    blurb:
+      "Delacroix painted Liberty as an allegorical goddess striding over the barricades of the July Revolution, musket in one hand and the tricolor in the other. Romantic, violent and hopeful all at once, it became the defining image of revolution — and a model for the Statue of Liberty.",
+  },
+  {
+    id: "wanderer",
+    title: "Wanderer above the Sea of Fog",
+    artist: "Caspar David Friedrich",
+    year: "c. 1818",
+    period: "Romanticism",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg?width=1000",
+    credit: "Hamburger Kunsthalle, public domain via Wikimedia Commons",
+    blurb:
+      "A man in a dark coat stands on a rocky peak, gazing over a sea of mist that swallows the mountains below. Friedrich's iconic figure — seen from behind, facing the sublime — became the very emblem of Romantic longing and the individual's place in an overwhelming nature.",
+  },
+  {
+    id: "fighting-temeraire",
+    title: "The Fighting Temeraire",
+    artist: "J. M. W. Turner",
+    year: "1839",
+    period: "Romanticism",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg?width=1000",
+    credit: "National Gallery, London, public domain via Wikimedia Commons",
+    blurb:
+      "Turner watched the great warship that had fought at Trafalgar being towed to its final berth to be broken up — and turned that errand into an elegy for the age of sail. The doomed ship glows ghostly white against a molten sunset, a masterclass in light, color and loss.",
+  },
+  {
+    id: "creation-of-adam",
+    title: "The Creation of Adam",
+    artist: "Michelangelo",
+    year: "c. 1512",
+    period: "High Renaissance",
+    medium: "Fresco",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo_-_Creation_of_Adam_(cropped).jpg?width=1000",
+    credit: "Sistine Chapel, Vatican, public domain via Wikimedia Commons",
+    blurb:
+      "Michelangelo's fresco shows God reaching out to touch Adam into life — two fingers hovering a breath apart, the gap charged with the whole of creation. Painted on the Sistine Chapel ceiling over four years of physical agony, it remains one of the most reproduced images in history.",
+  },
+  {
+    id: "grande-jatte",
+    title: "A Sunday Afternoon on the Island of La Grande Jatte",
+    artist: "Georges Seurat",
+    year: "1884–1886",
+    period: "Post-Impressionism",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/A_Sunday_on_La_Grande_Jatte,_Georges_Seurat,_1884.jpg?width=1000",
+    credit: "Art Institute of Chicago, public domain via Wikimedia Commons",
+    blurb:
+      "Seurat spent two years dotting this park scene with thousands of tiny color points, building a new technique — pointillism — out of science and patience. The frozen, doll-like Parisians beneath the hazy summer sun made it the manifesto of Neo-Impressionism.",
+  },
+  {
+    id: "ophelia",
+    title: "Ophelia",
+    artist: "John Everett Millais",
+    year: "1851–1852",
+    period: "Pre-Raphaelite",
+    medium: "Oil on canvas",
+    imageUrl:
+      "https://commons.wikimedia.org/wiki/Special:FilePath/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?width=1000",
+    credit: "Tate Britain, public domain via Wikimedia Commons",
+    blurb:
+      "Millais painted Ophelia floating to her death in a stream, her hands outstretched and her dress billowing like a flower. Painted out of doors over months of painstaking botanical detail, it is the Pre-Raphaelite Brotherhood's most haunting fusion of beauty and tragedy.",
   },
 ];
 

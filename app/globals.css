@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark;
   --bg: #12100e;
   --bg-soft: #181511;
   --panel: #1e1a15;
@@ -59,6 +60,17 @@ img {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 .wordmark {
@@ -401,7 +413,8 @@ img {
 
 .opt-btn {
   font-size: 13px;
-  padding: 7px 13px;
+  padding: 8px 14px;
+  min-height: 38px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--bg-soft);
@@ -426,6 +439,7 @@ img {
   width: 100%;
   margin-top: 6px;
   padding: 13px 18px;
+  min-height: 48px;
   font-size: 15px;
   font-family: var(--serif);
   letter-spacing: 0.03em;
@@ -530,6 +544,7 @@ img {
 .save-btn {
   margin-top: 16px;
   padding: 10px 18px;
+  min-height: 40px;
   font-size: 13.5px;
   letter-spacing: 0.06em;
   border: 1px solid var(--accent);
@@ -715,4 +730,112 @@ img {
   background: rgba(122, 59, 49, 0.12);
   color: #e0a89b;
   font-size: 13.5px;
+}
+
+/* ---------- mobile & device polish ---------- */
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Touch devices have no hover — keep the delete button visible. */
+@media (hover: none) {
+  .strip-delete {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .tagline {
+    display: none;
+  }
+
+  .site-header-inner {
+    padding: 14px 16px;
+  }
+
+  .site-main {
+    padding: 32px 16px 64px;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+  }
+
+  .hero p {
+    font-size: 15.5px;
+  }
+
+  .section-head {
+    flex-wrap: wrap;
+    gap: 6px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 12px;
+  }
+
+  .card-meta h3 {
+    font-size: 16px;
+  }
+
+  .panel {
+    padding: 20px 16px;
+  }
+
+  .artwork-info h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fact-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .fact {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .wordmark {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .card:hover .card-frame img {
+    transform: none;
+  }
 }

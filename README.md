@@ -40,7 +40,7 @@ All AI keys are **server-side only** — nothing secret is ever shipped to the b
 
 1. Create a project and copy the URL + publishable key into `.env.local`.
 2. Open **Supabase → SQL Editor**, paste the whole `supabase/schema.sql` file, click **Run**. This creates:
-   - `artworks`, `remixes`, `likes` tables (seeded with the 12-artwork catalog)
+   - `artworks`, `remixes`, `likes` tables (seeded with the 22-artwork catalog)
    - the **private** `artworks` Storage bucket
    - Row Level Security + Storage policies (users can only touch their own data)
 3. Enable **Anonymous sign-ins**: Supabase → Authentication → Sign In / Up → Anonymous sign-ins → **Enable**. The app signs each browser in anonymously so every remix has an owner (no signup form needed).
@@ -54,7 +54,7 @@ All AI keys are **server-side only** — nothing secret is ever shipped to the b
 
 ## Code map
 
-- **`lib/artworks.ts`** — the 12-artwork catalog (public-domain images from Wikimedia Commons).
+- **`lib/artworks.ts`** — the 22-artwork catalog (public-domain images from Wikimedia Commons).
 - **`lib/dimensions.ts`** — the remix matrix: 8 eras × 8 artists × 8 materials, each with an image prompt and a historical note.
 - **`app/api/remix/route.ts`** — server-only: downloads the artwork, builds the prompt, calls Stability AI (image-to-image), returns the image + narration. Demo fallback when no key.
 - **`lib/narration.ts`** — LLM curator narration with a template fallback.
