@@ -10,8 +10,17 @@ export const viewport: Viewport = {
   themeColor: "#12100e",
 };
 
+// Social previews must point at an absolute URL. On Vercel the production
+// domain is available as VERCEL_PROJECT_PRODUCTION_URL even when
+// NEXT_PUBLIC_SITE_URL hasn't been set in the dashboard.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   applicationName: "The What-If Museum",
   title: {
     default: "The What-If Museum — Reimagine the Masterpieces",
