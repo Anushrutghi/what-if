@@ -2,15 +2,7 @@
 
 An imaginary museum of real art history. Take a public-domain masterpiece, bend its **era**, its **artist**, or its **material** — and an AI reimagines it while a curator explains why it matters.
 
-```
-Browser
-   ↓
-Vercel / Next.js (App Router)
-   ↓
-Supabase PostgreSQL + Supabase Storage  ← remixes, likes, generated images
-   ↓
-Stability AI (img2img) + LLM narration
-```
+
 
 ## Getting started
 
