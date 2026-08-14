@@ -11,7 +11,15 @@ import { createClient } from "@/lib/supabase/client";
 export default function SessionBootstrap() {
   useEffect(() => {
     let cancelled = false;
-    const supabase = createClient();
+
+    let supabase;
+    try {
+      supabase = createClient();
+    } catch {
+      // Supabase not configured — skip anonymous sign-in rather than crash.
+      return;
+    }
+
     supabase.auth.getSession().then(({ data }) => {
       if (cancelled) return;
       if (!data.session) {

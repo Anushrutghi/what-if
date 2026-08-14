@@ -1,7 +1,7 @@
 import { createClient } from "@/lib/supabase/client";
 import type { SupabaseClient } from "@supabase/supabase-js";
 
-const BUCKET = "artworks";
+const BUCKET = "artwork";
 
 /** Fired after a remix is saved or deleted so galleries can refresh. */
 export const REMIX_EVENT = "whatif-remixes-updated";

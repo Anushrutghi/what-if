@@ -65,7 +65,7 @@ create index if not exists likes_user_idx           on public.likes (user_id);
 -- ------------------------------------------------------------
 
 insert into storage.buckets (id, name, public)
-values ('artworks', 'artworks', false)
+values ('artwork', 'artwork', false)
 on conflict (id) do update set public = false;
 
 -- ------------------------------------------------------------
@@ -76,7 +76,7 @@ drop policy if exists "authenticated can upload remix images" on storage.objects
 create policy "authenticated can upload remix images"
   on storage.objects for insert to authenticated
   with check (
-    bucket_id = 'artworks'
+    bucket_id = 'artwork'
     and (storage.foldername(name))[1] = 'remixes'
     and (storage.foldername(name))[2] = auth.uid()::text
   );
@@ -85,7 +85,7 @@ drop policy if exists "owners can read their remix images" on storage.objects;
 create policy "owners can read their remix images"
   on storage.objects for select to authenticated
   using (
-    bucket_id = 'artworks'
+    bucket_id = 'artwork'
     and (storage.foldername(name))[2] = auth.uid()::text
   );
 
@@ -93,7 +93,7 @@ drop policy if exists "owners can delete their remix images" on storage.objects;
 create policy "owners can delete their remix images"
   on storage.objects for delete to authenticated
   using (
-    bucket_id = 'artworks'
+    bucket_id = 'artwork'
     and (storage.foldername(name))[2] = auth.uid()::text
   );
 
